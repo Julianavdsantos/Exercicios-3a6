@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+    <script>
+        function ler(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        let smallestVumber = Number.MAX_SAFE_INTEGER; 
+        let higherNumber = Number.MIN_SAFE_INTEGER; 
+        let sum = 0; 
+
+        
+        for (let i = 0; i < 400; i++) {
+            let numeroAleatorio = ler(1, 400);
+
+           
+            if (numeroAleatorio < smallestVumber) {
+                smallestVumber = numeroAleatorio;
+            }
+
+           
+            if (numeroAleatorio > higherNumber) {
+                higherNumber = numeroAleatorio;
+            }
+
+            
+            sum += numeroAleatorio;
+        }
+
+   
+        let average = sum / 40;
+
+        console.log("O menor número sorteado é:", smallestVumber);
+        console.log("O maior número sorteado é:", higherNumber);
+        console.log("A média dos números sorteados é:", average);
+    </script>
+</body>
+</html>

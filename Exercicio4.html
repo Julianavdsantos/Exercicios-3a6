@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function principal() {
+    let m, n;
+    
+    // Entrada 1: n=5 e m=3
+    n = 5;
+    m = 3;
+   
+    let r1 = calculateResult(m, n);
+    console.log("Saída para entrada 1:", r1);
+
+    // Entrada 2: n=0 e m=100001
+    n = 0;
+    m = 100001;
+   
+    let r2 = calculateResult(m, n);
+    console.log("Saída para entrada 2:", r2);
+
+    // Entrada 3: n=3 e m=15
+    n = 3;
+    m = 15;
+    
+    let r3 = calculateResult(m, n);
+    console.log("Saída para entrada 3:", r3);
+}
+
+function calculateResult(m, n) {
+    let r = 0;
+    while (n !== 0) {
+        r = r + m;
+        n = n - 1;
+    }
+    return r;
+}
+
+
+principal();
+
+    </script>
+</body>
+</html>

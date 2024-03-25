@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function principal() {
+            //entrada 1
+            let a, b;
+
+            a = 3;
+            b = 4;
+
+            let x1 = calcularresultado(a, b); 
+            console.log("Saída para entrada 1:", x1);
+
+            //entrada 2
+            a = 0;
+            b = 3;
+
+            let x2 = calcularresultado(a, b); 
+            console.log("Saída para entrada 2:", x2); 
+
+
+            //entrada 3
+            a = 3;
+            b = 9;
+
+            let x3 = calcularresultado(a, b); 
+            console.log("Saída para entrada 3:", x3); 
+
+        }
+
+        function calcularresultado(A, B) { 
+            if (A === 0) {
+                return "Não há raízes reais."; 
+            } else {
+                return B / A; 
+            }
+        }
+
+        principal();
+    </script>
+
+</body>
+</html>
